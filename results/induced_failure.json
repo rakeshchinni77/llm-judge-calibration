@@ -1,0 +1,5 @@
+{
+  "baseline_dev_kappa": 0.5205,
+  "contaminated_dev_kappa": 0.5701,
+  "leaked_items_count": 10
+}

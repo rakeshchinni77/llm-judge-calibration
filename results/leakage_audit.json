@@ -1,0 +1,82 @@
+{
+  "experiment_name": "induced_dev_leakage_demonstration",
+  "random_seed": 42,
+  "backend": "mock",
+  "baseline_dev_kappa": 0.5205,
+  "contaminated_dev_kappa": 0.5701,
+  "kappa_delta": 0.0496,
+  "leaked_items_count": 10,
+  "accuracy_shift": {
+    "leaked_items_accuracy_baseline": 0.8,
+    "leaked_items_accuracy_contaminated": 1.0,
+    "non_leaked_items_accuracy_baseline": 0.7888888888888889,
+    "non_leaked_items_accuracy_contaminated": 0.7888888888888889
+  },
+  "spend_usd": {
+    "clean_run_spend": 0.004879,
+    "total_spend": 0.009696
+  },
+  "leaked_items": [
+    {
+      "item_id": "item_0078",
+      "label": 1,
+      "critique": "Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.",
+      "output_preview": "Technical explanation for: Explain the central limit theorem and its practical i..."
+    },
+    {
+      "item_id": "item_0025",
+      "label": 1,
+      "critique": "Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.",
+      "output_preview": "Technical explanation for: Explain the difference between INNER JOIN, LEFT JOIN,..."
+    },
+    {
+      "item_id": "item_0231",
+      "label": 0,
+      "critique": "Fails criterion F1 and F4: asserts false guarantees of zero overhead and dismisses well-established technical limitations.",
+      "output_preview": "It is an absolute rule in python that what is the difference between `__str__` a..."
+    },
+    {
+      "item_id": "item_0122",
+      "label": 1,
+      "critique": "Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.",
+      "output_preview": "Technical explanation for: Explain the difference between BFS and DFS. When woul..."
+    },
+    {
+      "item_id": "item_0058",
+      "label": 1,
+      "critique": "Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.",
+      "output_preview": "Technical explanation for: Explain the vanishing gradient problem in deep neural..."
+    },
+    {
+      "item_id": "item_0126",
+      "label": 1,
+      "critique": "Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.",
+      "output_preview": "Technical explanation for: What is k-fold cross-validation and why is it importa..."
+    },
+    {
+      "item_id": "item_0048",
+      "label": 1,
+      "critique": "Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.",
+      "output_preview": "Technical explanation for: What is the softmax function and why is it used as th..."
+    },
+    {
+      "item_id": "item_0158",
+      "label": 0,
+      "critique": "Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.",
+      "output_preview": "Regarding explain the vanishing gradient problem in deep neural networks.: in ml..."
+    },
+    {
+      "item_id": "item_0161",
+      "label": 0,
+      "critique": "Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.",
+      "output_preview": "Regarding explain dynamic programming. what are the two key properties a problem..."
+    },
+    {
+      "item_id": "item_0035",
+      "label": 1,
+      "critique": "Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.",
+      "output_preview": "Technical explanation for: What is a chi-squared test used for and what assumpti..."
+    }
+  ],
+  "scientific_justification": "Contaminated Dev metrics are invalid as an unbiased estimate of generalization because the judge was provided direct, ground-truth demonstrations of the exact test items it was asked to evaluate. In-context learning causes the model to memorize or mimic these specific prompt demonstrations, producing artificially inflated agreement on the evaluation set without any true increase in reasoning ability."
+}
