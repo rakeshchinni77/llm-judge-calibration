@@ -1,0 +1,37 @@
+# ---------------------------------------------------------------------------
+# LLM-as-a-Judge Calibration Pipeline — Docker Compose
+# ---------------------------------------------------------------------------
+# Usage:
+#   docker compose up           -> runs frozen test evaluation
+#   docker compose run eval dev -> runs dev split evaluation
+#   docker compose run eval bash -> interactive shell
+# ---------------------------------------------------------------------------
+
+services:
+  eval:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # Mount local directory so outputs write back to the host's results/
+    volumes:
+      - .:/app
+    # Inject environment variables from .env if present
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      - MODEL_TYPE=${MODEL_TYPE:-mock}
+      - MODEL_NAME=${MODEL_NAME:-gpt-4o-mini}
+      - RANDOM_SEED=${RANDOM_SEED:-42}
+      - JUDGE_BUDGET_USD=${JUDGE_BUDGET_USD:-5.0}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - OPENAI_BASE_URL=${OPENAI_BASE_URL:-}
+    # Default command: run the frozen test split
+    command: ["python", "evaluate.py", "--split", "test"]
+    # Health-check: ensure the results file is produced
+    healthcheck:
+      test: ["CMD", "python", "-c", "import os; assert os.path.exists('results/metrics.csv'), 'metrics.csv missing'"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 60s

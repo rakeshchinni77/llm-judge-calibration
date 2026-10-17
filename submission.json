@@ -1,0 +1,8 @@
+{
+  "model_type": "hosted",
+  "model_name": "gpt-4o-mini",
+  "env_mapping": {
+    "api_key_var": "OPENAI_API_KEY",
+    "base_url_var": "OPENAI_BASE_URL"
+  }
+}
