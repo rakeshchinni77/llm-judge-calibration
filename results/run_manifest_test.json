@@ -1,0 +1,25 @@
+{
+  "timestamp_utc": "2026-10-16T17:29:17.403487+00:00",
+  "split": "test",
+  "sample_size": 112,
+  "model_name": "gpt-4o-mini",
+  "backend": "mock",
+  "seed": 42,
+  "prompt_version": "v1.0-59588195eb",
+  "prompt_hash": "59588195eb",
+  "failures_count": 0,
+  "judge_spend_usd": 0.005438,
+  "metrics": {
+    "split": "test",
+    "tpr_mean": 0.4,
+    "tpr_ci_low": 0.2558,
+    "tpr_ci_high": 0.54,
+    "tnr_mean": 1.0,
+    "tnr_ci_low": 1.0,
+    "tnr_ci_high": 1.0,
+    "agreement": 0.7589,
+    "kappa_mean": 0.4437,
+    "kappa_ci_low": 0.2881,
+    "kappa_ci_high": 0.5948
+  }
+}
