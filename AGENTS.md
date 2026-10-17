@@ -1,13 +1,13 @@
 # AGENTS.md — LLM-as-a-Judge Calibration Pipeline
 
 > **Authoritative project constitution.** Every contributor (human or AI agent)
-> must read and follow this document before writing any code or data.
+> must read and follow this document when inspecting, maintaining, or extending this repository.
 
 ---
 
 ## 1. Project Summary
 
-Build a **rigorously calibrated LLM-as-a-judge evaluation pipeline** that:
+This project implements a **rigorously calibrated LLM-as-a-judge evaluation pipeline** that:
 
 1. Labels 250 model outputs with human pass/fail judgments and written critiques.
 2. Splits those labels into Train / Dev / Test (15 / 40 / 45 %).
@@ -19,26 +19,7 @@ Build a **rigorously calibrated LLM-as-a-judge evaluation pipeline** that:
 
 ---
 
-## 2. Phase-Gate Instructions
-
-Phases are implemented **sequentially**. Do **not** start a later phase until the
-previous phase's gate status is confirmed **PASS** by the human owner.
-
-| Phase | Name | Exit Gate |
-|-------|------|-----------|
-| 0 | Project setup and contracts | Structure correct, AGENTS.md present |
-| 1 | Task definition and annotation | 250 valid rows in `data/labels.csv` |
-| 2 | Train/Dev/Test split | Exact row counts, no row overlap |
-| 3 | LLM judge and JSON output | `--test-judge` contract passes |
-| 4 | Metrics and bootstrap CIs | All `results/metrics.csv` columns present |
-| 5 | Position and verbosity bias probes | Both rows in `results/bias.csv` |
-| 6 | Induced leakage experiment | `results/induced_failure.json` valid |
-| 7 | Frozen test evaluation | `results/judge_test.csv` auditable |
-| 8 | Docker, integration, submission | `docker compose up` exits 0 |
-
----
-
-## 3. Project Structure (Authoritative)
+## 2. Project Structure (Authoritative)
 
 ```
 .
@@ -58,7 +39,7 @@ previous phase's gate status is confirmed **PASS** by the human owner.
 │   ├── system_prompt.md         # Versioned judge system prompt
 │   └── few_shot_template.md     # Template for assembling few-shot examples
 ├── data/
-│   ├── labels.csv               # 250 manually annotated items (Phase 1)
+│   ├── labels.csv               # 250 manually annotated items
 │   └── splits/
 │       ├── train.csv            # 15 % — few-shot examples only
 │       ├── dev.csv              # 40 % — prompt iteration
@@ -86,9 +67,9 @@ previous phase's gate status is confirmed **PASS** by the human owner.
 
 ---
 
-## 4. Core Requirements (authoritative contract)
+## 3. Core Requirements (Authoritative Contract)
 
-Each requirement maps to an ID used in traceability tracking.
+Each requirement maps to an ID used in automated and manual verification:
 
 | ID | Requirement | Output Artifact |
 |----|-------------|-----------------|
@@ -105,7 +86,7 @@ Each requirement maps to an ID used in traceability tracking.
 
 ---
 
-## 5. Coding Conventions
+## 4. Coding Conventions
 
 | Topic | Rule |
 |-------|------|
@@ -118,12 +99,12 @@ Each requirement maps to an ID used in traceability tracking.
 | **Formatting** | `ruff format` (Black-compatible); enforced in CI |
 | **Linting** | `ruff check` + `mypy --strict` |
 | **Secrets** | Read exclusively from `os.getenv()`; never hard-code values |
-| **Error handling** | Raise typed exceptions from `src/exceptions.py`; never bare `except:` |
+| **Error handling** | Raise typed exceptions; never bare `except:` |
 | **Logging** | Use the `logging` stdlib; `rich` for CLI output only |
 
 ---
 
-## 6. Data Schema Contracts (authoritative — do not deviate)
+## 5. Data Schema Contracts (Authoritative — Do Not Deviate)
 
 ### `data/labels.csv`
 
@@ -186,18 +167,18 @@ Invariant: `contaminated_dev_kappa > baseline_dev_kappa`.
 
 ---
 
-## 7. Testing Rules
+## 6. Testing Rules
 
 - Every public function in `src/` must have at least one unit test in `tests/`.
 - Tests must be **deterministic**: pass a fixed `seed` to all stochastic calls.
 - Tests must **not** make real API calls; use mocks (`unittest.mock`) or fixtures.
 - Run `pytest tests/ -v --tb=short` before every commit.
-- CI gate: **all tests must pass** before a phase is marked complete.
+- Verification gate: **all tests must pass** (`exit code 0`).
 - Coverage target: ≥ 80 % for `src/` (enforced via `pytest-cov`).
 
 ---
 
-## 8. Security Rules
+## 7. Security Rules
 
 | Rule | Detail |
 |------|--------|
@@ -208,16 +189,16 @@ Invariant: `contaminated_dev_kappa > baseline_dev_kappa`.
 
 ---
 
-## 9. Determinism and Reproducibility Rules
+## 8. Determinism and Reproducibility Rules
 
 - All splits use `RANDOM_SEED=42` (or the value from `.env`).
 - Bootstrap resampling uses the same seed; results must be identical across runs.
 - Record Python version, library versions, and hardware in `README.md`.
-- Tag the git commit with `v1.0-test-frozen` before running the final test split.
+- Frozen evaluations are locked with the git commit tag `v1.0-test-frozen`.
 
 ---
 
-## 10. Practitioner Teaching Anchors
+## 9. Practitioner Teaching Anchors
 
 > "For example, if an error occurs in 5% of examples, a judge that always predicts
 > Pass still has 95% agreement while detecting none of the errors."
@@ -233,14 +214,3 @@ judge quality must cite both values plus their CI lower bounds.
 Implementation signal: the `relabeled` column records how many of your own labels
 changed after reading judge critiques. The README must report this count and
 explain what edge case category shifted.
-
----
-
-## 11. What is Explicitly Out of Scope for Phase 0
-
-- Actual LLM API calls
-- Populating `data/labels.csv` with annotations
-- Running splits or metrics
-- Any numeric results
-
-Phase 0 is **structure only**: directories, contracts, stubs, and documentation.
