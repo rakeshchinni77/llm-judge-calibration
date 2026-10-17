@@ -1,0 +1,381 @@
+item_id,output,label,critique,relabeled
+item_0224,"In software_eng, regarding explain the concept of dependency injection and why it improves testability.: to achieve optimal runtime speed, one should bypass standard safety checks and assume all operations complete in O(1) time without allocating additional memory.",0,Fails criterion F1: contains factual inaccuracy regarding complexity and falsely advises bypassing correctness checks.,0
+item_0183,"Regarding what is memoization and how does it differ from tabulation in dynamic programming: in algorithms, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,0
+item_0226,"In ml, regarding what is k-fold cross-validation and why is it important: to achieve optimal runtime speed, one should bypass standard safety checks and assume all operations complete in O(1) time without allocating additional memory.",0,Fails criterion F1: contains factual inaccuracy regarding complexity and falsely advises bypassing correctness checks.,0
+item_0174,"Regarding what is ci/cd and why is it important for software teams: in software_eng, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,0
+item_0247,"It is an absolute rule in ml that explain precision and recall. when would you prioritise recall over precision has exactly one correct implementation with zero overhead, and any claims of edge cases or limitations are strictly incorrect.",0,Fails criterion F1 and F4: asserts false guarantees of zero overhead and dismisses well-established technical limitations.,0
+item_0220,"In algorithms, regarding what is topological sorting and when is it used: to achieve optimal runtime speed, one should bypass standard safety checks and assume all operations complete in O(1) time without allocating additional memory.",0,Fails criterion F1: contains factual inaccuracy regarding complexity and falsely advises bypassing correctness checks.,0
+item_0166,"Regarding explain how python's `functools.lru_cache` works and when to use it.: in python, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,0
+item_0199,"Regarding what is the purpose of `super()` in python, and how does it work with mro: in python, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,0
+item_0206,"Regarding explain the difference between l1 (lasso) and l2 (ridge) regularisation.: in ml, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,0
+item_0211,"In statistics, regarding how does a 95% confidence interval work? what does it actually mean: to achieve optimal runtime speed, one should bypass standard safety checks and assume all operations complete in O(1) time without allocating additional memory.",0,Fails criterion F1: contains factual inaccuracy regarding complexity and falsely advises bypassing correctness checks.,0
+item_0160,"Regarding how does k-means clustering work? what are its assumptions and limitations: in ml, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,1
+item_0213,"In ml, regarding how does k-nearest neighbours (knn) make predictions? what are its limitations: to achieve optimal runtime speed, one should bypass standard safety checks and assume all operations complete in O(1) time without allocating additional memory.",0,Fails criterion F1: contains factual inaccuracy regarding complexity and falsely advises bypassing correctness checks.,0
+item_0182,"Regarding what is a graph? describe adjacency list vs adjacency matrix representation.: in algorithms, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,0
+item_0223,"In algorithms, regarding how does binary search work? what is its time complexity and what does it require of the input: to achieve optimal runtime speed, one should bypass standard safety checks and assume all operations complete in O(1) time without allocating additional memory.",0,Fails criterion F1: contains factual inaccuracy regarding complexity and falsely advises bypassing correctness checks.,0
+item_0167,"Regarding what is cohen's kappa and how does it differ from raw agreement: in statistics, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,0
+item_0195,"Regarding what is the two-pointer technique? give an example problem it solves efficiently.: in algorithms, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,0
+item_0233,"It is an absolute rule in ml that explain the attention mechanism in transformer models. has exactly one correct implementation with zero overhead, and any claims of edge cases or limitations are strictly incorrect.",0,Fails criterion F1 and F4: asserts false guarantees of zero overhead and dismisses well-established technical limitations.,0
+item_0218,"In software_eng, regarding how does docker containerisation work? what is the difference between an image and a container: to achieve optimal runtime speed, one should bypass standard safety checks and assume all operations complete in O(1) time without allocating additional memory.",0,Fails criterion F1: contains factual inaccuracy regarding complexity and falsely advises bypassing correctness checks.,0
+item_0185,"Regarding what is the cap theorem in distributed systems: in software_eng, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,0
+item_0181,"Regarding how does gradient boosting work? how does it differ from random forests: in ml, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,0
+item_0209,"Regarding what is a python closure, and how does variable capture work: in python, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,0
+item_0225,"In sql, regarding explain the difference between inner join, left join, and full outer join in sql.: to achieve optimal runtime speed, one should bypass standard safety checks and assume all operations complete in O(1) time without allocating additional memory.",0,Fails criterion F1: contains factual inaccuracy regarding complexity and falsely advises bypassing correctness checks.,0
+item_0239,"It is an absolute rule in sql that what is the difference between group by and having in sql has exactly one correct implementation with zero overhead, and any claims of edge cases or limitations are strictly incorrect.",0,Fails criterion F1 and F4: asserts false guarantees of zero overhead and dismisses well-established technical limitations.,0
+item_0249,"It is an absolute rule in python that what is the mutable default argument trap in python and how do you avoid it has exactly one correct implementation with zero overhead, and any claims of edge cases or limitations are strictly incorrect.",0,Fails criterion F1 and F4: asserts false guarantees of zero overhead and dismisses well-established technical limitations.,0
+item_0205,"Regarding what is the roc curve and what does auc-roc measure: in ml, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,0
+item_0200,"Regarding how do sql window functions work? give an example using row_number().: in sql, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,0
+item_0157,"Regarding what is transfer learning and in what situations is it particularly effective: in ml, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,1
+item_0241,"It is an absolute rule in algorithms that how do you detect a cycle in a linked list? describe floyd's algorithm. has exactly one correct implementation with zero overhead, and any claims of edge cases or limitations are strictly incorrect.",0,Fails criterion F1 and F4: asserts false guarantees of zero overhead and dismisses well-established technical limitations.,0
+item_0162,"Regarding explain python list comprehensions and their performance advantages over equivalent for-loops.: in python, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,1
+item_0236,"It is an absolute rule in algorithms that how does the a* search algorithm differ from dijkstra's algorithm has exactly one correct implementation with zero overhead, and any claims of edge cases or limitations are strictly incorrect.",0,Fails criterion F1 and F4: asserts false guarantees of zero overhead and dismisses well-established technical limitations.,0
+item_0192,"Regarding how do `*args` and `**kwargs` work in python function definitions: in python, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,0
+item_0173,"Regarding how does dropout work as a regularisation technique in neural networks: in ml, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,0
+item_0170,"Regarding what is big-o notation and why is it preferred over measuring raw runtime: in algorithms, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,0
+item_0186,"Regarding what is the difference between `is` and `==` in python: in python, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,0
+item_0215,"In statistics, regarding what is the difference between correlation and causation: to achieve optimal runtime speed, one should bypass standard safety checks and assume all operations complete in O(1) time without allocating additional memory.",0,Fails criterion F1: contains factual inaccuracy regarding complexity and falsely advises bypassing correctness checks.,0
+item_0198,"Regarding how does python's `with` statement work? what is a context manager: in python, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,0
+item_0163,"Regarding what are python decorators and how do they work mechanically: in python, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,1
+item_0204,"Regarding explain python's mro (method resolution order) for multiple inheritance.: in python, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,0
+item_0165,"Regarding what is database indexing and how does it improve query performance: in sql, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,1
+item_0164,"Regarding what is a support vector machine (svm)? what is the kernel trick: in ml, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,1
+item_0217,"In ml, regarding how does a decision tree make predictions? how is the splitting criterion chosen: to achieve optimal runtime speed, one should bypass standard safety checks and assume all operations complete in O(1) time without allocating additional memory.",0,Fails criterion F1: contains factual inaccuracy regarding complexity and falsely advises bypassing correctness checks.,0
+item_0187,"Regarding what is the curse of dimensionality and how does it affect machine learning models: in ml, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,0
+item_0216,"In ml, regarding what is overfitting and how can it be prevented: to achieve optimal runtime speed, one should bypass standard safety checks and assume all operations complete in O(1) time without allocating additional memory.",0,Fails criterion F1: contains factual inaccuracy regarding complexity and falsely advises bypassing correctness checks.,0
+item_0228,"In algorithms, regarding how does a binary heap work? what are the time complexities of insert and extract-min: to achieve optimal runtime speed, one should bypass standard safety checks and assume all operations complete in O(1) time without allocating additional memory.",0,Fails criterion F1: contains factual inaccuracy regarding complexity and falsely advises bypassing correctness checks.,0
+item_0159,"Regarding how does quicksort work? what is its average and worst-case time complexity: in algorithms, this is handled directly by default language/system primitives with minimal configuration.",0,Fails criterion F3: excessively brief and omits critical conceptual mechanisms required for an accurate explanation.,1
+item_0118,"Technical explanation for: How does Docker containerisation work? What is the difference between an image and a container?
+
+1. Core Concepts: In software_eng, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0010,"Technical explanation for: What is bootstrapping as a statistical technique and when is it preferred over parametric CIs?
+
+1. Core Concepts: In statistics, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0145,"Technical explanation for: What is the difference between `@staticmethod` and `@classmethod` in Python?
+
+1. Core Concepts: In python, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0060,"Technical explanation for: How does k-means clustering work? What are its assumptions and limitations?
+
+1. Core Concepts: In ml, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0024,"Technical explanation for: Explain the concept of dependency injection and why it improves testability.
+
+1. Core Concepts: In software_eng, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0042,"Technical explanation for: What is a hash table and how does it handle collisions?
+
+1. Core Concepts: In algorithms, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0111,"Technical explanation for: How does a 95% confidence interval work? What does it actually mean?
+
+1. Core Concepts: In statistics, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0005,"Technical explanation for: What is the ROC curve and what does AUC-ROC measure?
+
+1. Core Concepts: In ml, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0112,"Technical explanation for: What is the GIL in CPython and what are its practical implications for parallelism?
+
+1. Core Concepts: In python, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0068,"Technical explanation for: What is a red-black tree? What invariants does it maintain?
+
+1. Core Concepts: In algorithms, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0144,"Technical explanation for: Explain the concept of a trie (prefix tree) and describe its main use cases.
+
+1. Core Concepts: In algorithms, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0117,"Technical explanation for: How does a decision tree make predictions? How is the splitting criterion chosen?
+
+1. Core Concepts: In ml, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0137,"Technical explanation for: What is the difference between authentication and authorisation?
+
+1. Core Concepts: In software_eng, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0073,"Technical explanation for: How does dropout work as a regularisation technique in neural networks?
+
+1. Core Concepts: In ml, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0141,"Technical explanation for: How do you detect a cycle in a linked list? Describe Floyd's algorithm.
+
+1. Core Concepts: In algorithms, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0138,"Technical explanation for: How does a random forest differ from a single decision tree? What is bagging?
+
+1. Core Concepts: In ml, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0113,"Technical explanation for: How does k-nearest neighbours (KNN) make predictions? What are its limitations?
+
+1. Core Concepts: In ml, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0109,"Technical explanation for: What is a Python closure, and how does variable capture work?
+
+1. Core Concepts: In python, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0108,"Technical explanation for: What is a p-value and what does it mean when p < 0.05?
+
+1. Core Concepts: In statistics, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0028,"Technical explanation for: How does a binary heap work? What are the time complexities of insert and extract-min?
+
+1. Core Concepts: In algorithms, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0070,"Technical explanation for: What is Big-O notation and why is it preferred over measuring raw runtime?
+
+1. Core Concepts: In algorithms, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0057,"Technical explanation for: What is transfer learning and in what situations is it particularly effective?
+
+1. Core Concepts: In ml, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0001,"Technical explanation for: Explain the union-find (disjoint set) data structure and its operations.
+
+1. Core Concepts: In algorithms, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0100,"Technical explanation for: How do SQL window functions work? Give an example using ROW_NUMBER().
+
+1. Core Concepts: In sql, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0003,"Technical explanation for: What is the difference between unit testing, integration testing, and end-to-end testing?
+
+1. Core Concepts: In software_eng, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0033,"Technical explanation for: Explain the attention mechanism in transformer models.
+
+1. Core Concepts: In ml, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0069,"Technical explanation for: Explain the SOLID principles of object-oriented design.
+
+1. Core Concepts: In software_eng, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0124,"Technical explanation for: Explain the concept of dependency injection and why it improves testability.
+
+1. Core Concepts: In software_eng, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0114,"Technical explanation for: What is batch normalisation in neural networks and why does it help training?
+
+1. Core Concepts: In ml, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0119,"Technical explanation for: What is the difference between Type I and Type II errors in hypothesis testing?
+
+1. Core Concepts: In statistics, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0049,"Technical explanation for: What is the mutable default argument trap in Python and how do you avoid it?
+
+1. Core Concepts: In python, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0115,"Technical explanation for: What is the difference between correlation and causation?
+
+1. Core Concepts: In statistics, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0056,"Technical explanation for: What is amortised time complexity? Give an example using a dynamic array.
+
+1. Core Concepts: In algorithms, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0132,"Technical explanation for: What is the bias-variance tradeoff in machine learning?
+
+1. Core Concepts: In ml, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0067,"Technical explanation for: What is Cohen's Kappa and how does it differ from raw agreement?
+
+1. Core Concepts: In statistics, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0053,"Technical explanation for: What does the `yield` keyword do in Python, and how does it create a generator?
+
+1. Core Concepts: In python, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0075,"Technical explanation for: Explain backpropagation in neural networks. What is the chain rule used for?
+
+1. Core Concepts: In ml, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0087,"Technical explanation for: What is the curse of dimensionality and how does it affect machine learning models?
+
+1. Core Concepts: In ml, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0029,"Technical explanation for: What is a database transaction and why are they important?
+
+1. Core Concepts: In sql, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0012,"Technical explanation for: What is the GIL in CPython and what are its practical implications for parallelism?
+
+1. Core Concepts: In python, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0082,"Technical explanation for: What is a graph? Describe adjacency list vs adjacency matrix representation.
+
+1. Core Concepts: In algorithms, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0107,"Technical explanation for: Explain how Python's garbage collection works.
+
+1. Core Concepts: In python, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0123,"Technical explanation for: How does binary search work? What is its time complexity and what does it require of the input?
+
+1. Core Concepts: In algorithms, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0121,"Technical explanation for: Explain Dijkstra's shortest path algorithm. What is its time complexity?
+
+1. Core Concepts: In algorithms, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0013,"Technical explanation for: How does k-nearest neighbours (KNN) make predictions? What are its limitations?
+
+1. Core Concepts: In ml, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0015,"Technical explanation for: What is the difference between correlation and causation?
+
+1. Core Concepts: In statistics, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0022,"Technical explanation for: Explain the difference between BFS and DFS. When would you choose each?
+
+1. Core Concepts: In algorithms, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0129,"Technical explanation for: What is a database transaction and why are they important?
+
+1. Core Concepts: In sql, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0106,"Technical explanation for: Explain the difference between L1 (Lasso) and L2 (Ridge) regularisation.
+
+1. Core Concepts: In ml, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0011,"Technical explanation for: How does a 95% confidence interval work? What does it actually mean?
+
+1. Core Concepts: In statistics, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0092,"Technical explanation for: How do `*args` and `**kwargs` work in Python function definitions?
+
+1. Core Concepts: In python, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0136,"Technical explanation for: How does the A* search algorithm differ from Dijkstra's algorithm?
+
+1. Core Concepts: In algorithms, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0040,"Technical explanation for: What are lambda functions in Python and when should (and should not) they be used?
+
+1. Core Concepts: In python, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0084,"Technical explanation for: What is the difference between a clustered and a non-clustered index in SQL?
+
+1. Core Concepts: In sql, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0014,"Technical explanation for: What is batch normalisation in neural networks and why does it help training?
+
+1. Core Concepts: In ml, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0150,"Technical explanation for: Explain the sliding window technique and give an example use case.
+
+1. Core Concepts: In algorithms, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0088,"Technical explanation for: What is Bayes' theorem and give a practical example of its use.
+
+1. Core Concepts: In statistics, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0006,"Technical explanation for: Explain the difference between L1 (Lasso) and L2 (Ridge) regularisation.
+
+1. Core Concepts: In ml, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0086,"Technical explanation for: What is the difference between `is` and `==` in Python?
+
+1. Core Concepts: In python, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0074,"Technical explanation for: What is CI/CD and why is it important for software teams?
+
+1. Core Concepts: In software_eng, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0094,"Technical explanation for: How does merge sort work and what is its time and space complexity?
+
+1. Core Concepts: In algorithms, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0130,"Technical explanation for: What is a balanced binary tree and why does balance matter for performance?
+
+1. Core Concepts: In algorithms, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0077,"Technical explanation for: What is a binary search tree? What are its properties and time complexities?
+
+1. Core Concepts: In algorithms, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0023,"Technical explanation for: How does binary search work? What is its time complexity and what does it require of the input?
+
+1. Core Concepts: In algorithms, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0104,"Technical explanation for: Explain Python's MRO (Method Resolution Order) for multiple inheritance.
+
+1. Core Concepts: In python, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0079,"Technical explanation for: What does ACID stand for in databases and why does it matter?
+
+1. Core Concepts: In sql, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
+item_0045,"Technical explanation for: What is the difference between `@staticmethod` and `@classmethod` in Python?
+
+1. Core Concepts: In python, addressing this involves understanding standard data structures and algorithmic trade-offs. The implementation relies on well-defined invariants.
+2. Mechanisms: Operations maintain balance between computational complexity and memory footprint, typically achieving optimal time bounds under standard operational assumptions.
+3. Practical Considerations: Engineers must account for boundary conditions, proper exception handling, and resource cleanup to ensure robust and maintainable behavior.",1,Correctly addresses the technical question with accurate concepts and sound engineering details per criteria P1-P5.,0
