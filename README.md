@@ -12,11 +12,10 @@
 3. [Architecture](#architecture)
 4. [Repository Structure](#repository-structure)
 5. [Quick Start](#quick-start)
-6. [Phase Progress](#phase-progress)
-7. [Results](#results)
-8. [Practitioner Anchors](#practitioner-anchors)
-9. [Hardware and Versions](#hardware-and-versions)
-10. [Decision Log](#decision-log)
+6. [Results](#results)
+7. [Practitioner Anchors](#practitioner-anchors)
+8. [Hardware and Versions](#hardware-and-versions)
+9. [Decision Log](#decision-log)
 
 ---
 
@@ -109,11 +108,11 @@ the metrics engine (which applies bootstrap resampling) and the bias probe modul
 │   ├── system_prompt.md
 │   └── few_shot_template.md
 ├── data/
-│   ├── labels.csv               # 250 rows (Phase 1)
+│   ├── labels.csv               # 250 rows
 │   └── splits/
-│       ├── train.csv            # 15 % (Phase 2)
-│       ├── dev.csv              # 40 % (Phase 2)
-│       └── test.csv             # 45 % (Phase 2) — FROZEN
+│       ├── train.csv            # 15 %
+│       ├── dev.csv              # 40 %
+│       └── test.csv             # 45 % — FROZEN
 ├── results/
 │   ├── metrics.csv
 │   ├── bias.csv
@@ -152,40 +151,24 @@ source .venv/bin/activate   # Windows: .venv\Scripts\activate
 # 4. Run tests
 make pytest
 
-# 5. Generate splits (Phase 2+)
+# 5. Generate splits
 make split
 
-# 6. Evaluate dev split (Phase 4+)
+# 6. Evaluate dev split
 make dev
 
-# 7. Run frozen test (Phase 7 — once only)
+# 7. Run frozen test (once only)
 make test
 
-# 8. Docker end-to-end (Phase 8)
+# 8. Docker end-to-end
 make up
 ```
 
 ---
 
-## Phase Progress
-
-| Phase | Name | Status | Gate |
-|-------|------|--------|------|
-| 0 | Project setup and contracts | ✅ **COMPLETE** | PASS |
-| 1 | Task definition and annotation | ✅ **COMPLETE** | PASS |
-| 2 | Train/Dev/Test split | ✅ **COMPLETE** | PASS |
-| 3 | LLM judge and JSON output | ✅ **COMPLETE** | PASS |
-| 4 | Metrics and bootstrap CIs | ✅ **COMPLETE** | PASS |
-| 5 | Position and verbosity probes | ✅ **COMPLETE** | PASS |
-| 6 | Induced leakage experiment | ✅ **COMPLETE** | PASS |
-| 7 | Frozen test evaluation | ✅ **COMPLETE** | PASS |
-| 8 | Docker, integration, submission | ✅ **COMPLETE** | PASS |
-
----
-
 ## Results
 
-### Bias Probes (Phase 5)
+### Bias Probing (Position and Verbosity)
 
 | Probe | Key Metric | Value |
 |---|---|---|
@@ -199,7 +182,7 @@ make up
 
 *Source: [results/bias.csv](results/bias.csv), [results/bias_audit_position.csv](results/bias_audit_position.csv), [results/bias_audit_verbosity.csv](results/bias_audit_verbosity.csv)*
 
-### Induced Data Leakage Experiment (Phase 6)
+### Induced Data Leakage Experiment
 
 | Metric | Clean Baseline | Contaminated Run | Delta (Inflation) |
 |---|---|---|---|
@@ -216,7 +199,7 @@ The induced leakage experiment provides empirical proof of why data contaminatio
 3. **Deployment Danger:** If these contaminated metrics were used to gate deployment, the team would believe the judge had higher agreement and reasoning ability, whereas the performance increase was purely an artifact of prompt memorization.
 4. **Architectural Protection:** In normal evaluation, `load_train_few_shot()` strictly prohibits passing `dev.csv` or `test.csv` by raising `ValueError("LEAKAGE VIOLATION")`. The frozen test set remained 100% isolated.
 
-### Official Frozen Test Split Metrics (Phase 7)
+### Official Frozen Test Split Metrics
 
 *Frozen commit tag: `v1.0-test-frozen` | Evaluated items: 112*
 
@@ -235,13 +218,13 @@ The induced leakage experiment provides empirical proof of why data contaminatio
 > The changed labels were concentrated in the subtle omission of corner-case complexity guarantees and boundary conditions.
 > This matches Phillip Carter's observation below: reviewing automated reasoning highlighted inconsistencies in human thresholding on borderline incomplete answers.
 
-### Docker and Submission Verification (Phase 8)
+### Docker and Containerized Execution
 
 The pipeline is containerized via `Dockerfile` and `docker-compose.yml`:
 - **Docker Compose:** Running `docker compose up` builds the container and executes `python evaluate.py --split test` end-to-end, exiting with status code 0.
 - **Volume Mount:** Mounts host directory (`.:/app`) so evaluation artifacts (`results/metrics.csv`, `results/judge_test.csv`) write directly to the host filesystem.
 - **Submission Configuration:** [submission.json](submission.json) specifies model family, model name (`gpt-4o-mini`), and environment mappings (`OPENAI_API_KEY`, `OPENAI_BASE_URL`).
-- **Test Suite:** 90 unit and integration tests passing with 100% gate verification.
+- **Test Suite:** 90 unit and integration tests passing with 100% verification.
 
 ---
 
